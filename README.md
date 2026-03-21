@@ -7,12 +7,19 @@
 
 ---
 
-![Banner Placeholder](https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/flutter_asset_manager/main/assets/banner.png)
+![Banner Placeholder](https://github.com/androdevsatyam/flutter_asset_manager/blob/main/assets/banner.png)
 
+----
 ## 💡 The Motive
 In Flutter, defining assets in `pubspec.yaml` can get incredibly tedious when your project scales. Creating a new module feature often means making new asset directories like `assets/icons/home_feature/`, and forgetting to declare them in `pubspec.yaml` leads to frustrating "Asset not found" crashes during runtime. 
 
 Just like how `flutter_native_splash` handles your splash screens, **`flutter_asset_manager`** provides a simple CLI tool that recursively scans your assets folder and accurately injects every necessary directory path right into your `pubspec.yaml`.
+
+## 🎨 Demonstration
+
+![Demonstration GIF Placeholder](https://github.com/androdevsatyam/flutter_asset_manager/blob/main/assets/example.gif)
+
+---
 
 ## ✨ Features
 * **Zero Config Required:** Plug and play. No bloated configuration models required.
@@ -48,7 +55,7 @@ dart run flutter_asset_manager:generate my_custom_folder
 Want to see it in action before adding it to your own project? We have a fully configured example project ready for you to playfully test on!
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/flutter_asset_manager.git
+git clone git clone https://github.com/androdevsatyam/flutter_asset_manager.git
 cd flutter_asset_manager/example
 dart run flutter_asset_manager:generate
 ```
@@ -57,11 +64,15 @@ dart run flutter_asset_manager:generate
 
 ---
 
-## 🎨 Demonstration
-
-![Demonstration GIF Placeholder](https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/flutter_asset_manager/main/assets/demo.gif)
-
-You will never need to manually manage the flutter assets list again!
-
 ## 🤝 Contributing
 Contributions are absolutely welcome! Feel free to open an issue or submit a PR on GitHub.
+
+---
+
+
+## 👨‍💻 Author
+
+Built with ❤️ by **@androdevsatyam**
+
+If this tool saved you time, consider ⭐ starring the repo.
+___
