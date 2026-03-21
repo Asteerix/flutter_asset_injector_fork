@@ -1,6 +1,6 @@
-# flutter_asset_manager_example
+# flutter_asset_injector_example
 
-A simple example app to demonstrate how `flutter_asset_manager` magically manages your `pubspec.yaml` assets!
+A simple example app to demonstrate how `flutter_asset_injector` magically manages your `pubspec.yaml` assets!
 
 ## How to test the generator
 
@@ -18,7 +18,7 @@ A simple example app to demonstrate how `flutter_asset_manager` magically manage
 
 4. Run the generator script:
    ```bash
-   dart run flutter_asset_manager:generate
+   dart run flutter_asset_injector:generate
    ```
 
 5. Watch the magic happen! Open `pubspec.yaml` and you'll see all populated asset folders injected seamlessly into your `flutter: assets:` section without removing any existing comments or styling!

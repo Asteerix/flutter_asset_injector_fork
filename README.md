@@ -1,23 +1,23 @@
-# 📁 flutter_asset_manager
+# 📁 flutter_asset_injector
 
-[![Pub Version](https://img.shields.io/pub/v/flutter_asset_manager?color=blue&logo=dart)](https://pub.dev/packages/flutter_asset_manager)
+[![Pub Version](https://img.shields.io/pub/v/flutter_asset_injector?color=blue&logo=dart)](https://pub.dev/packages/flutter_asset_injector)
 [![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg)](https://opensource.org/licenses/MIT)
 
 > Say goodbye to manually typing `- assets/images/...` in your `pubspec.yaml`. Let a single command do it for you while keeping your file formatting intact!
 
 ---
 
-![Banner Placeholder](https://github.com/androdevsatyam/flutter_asset_manager/blob/main/assets/banner.png)
+![Banner Placeholder](https://github.com/androdevsatyam/flutter_asset_injector/blob/main/assets/banner.png)
 
 ----
 ## 💡 The Motive
 In Flutter, defining assets in `pubspec.yaml` can get incredibly tedious when your project scales. Creating a new module feature often means making new asset directories like `assets/icons/home_feature/`, and forgetting to declare them in `pubspec.yaml` leads to frustrating "Asset not found" crashes during runtime. 
 
-Just like how `flutter_native_splash` handles your splash screens, **`flutter_asset_manager`** provides a simple CLI tool that recursively scans your assets folder and accurately injects every necessary directory path right into your `pubspec.yaml`.
+Just like how `flutter_native_splash` handles your splash screens, **`flutter_asset_injector`** provides a simple CLI tool that recursively scans your assets folder and accurately injects every necessary directory path right into your `pubspec.yaml`.
 
 ## 🎨 Demonstration
 
-![Demonstration GIF Placeholder](https://github.com/androdevsatyam/flutter_asset_manager/blob/main/assets/example.gif)
+![Demonstration GIF Placeholder](https://github.com/androdevsatyam/flutter_asset_injector/blob/main/assets/example.gif)
 
 ---
 
@@ -34,18 +34,18 @@ Add this to your package's `pubspec.yaml` (under `dev_dependencies`):
 
 ```yaml
 dev_dependencies:
-  flutter_asset_manager: ^1.0.0
+  flutter_asset_injector: ^1.0.0
 ```
 
 ### 2. Run the Command
 Execute the following from your terminal:
 ```bash
-dart run flutter_asset_manager:generate
+dart run flutter_asset_injector:generate
 ```
 
 *By default, the script looks for a root folder named `assets`. If you use different naming, just pass it as an argument:*
 ```bash
-dart run flutter_asset_manager:generate my_custom_folder
+dart run flutter_asset_injector:generate my_custom_folder
 ```
 
 ---
@@ -55,9 +55,9 @@ dart run flutter_asset_manager:generate my_custom_folder
 Want to see it in action before adding it to your own project? We have a fully configured example project ready for you to playfully test on!
 
 ```bash
-git clone https://github.com/androdevsatyam/flutter_asset_manager.git
-cd flutter_asset_manager/example
-dart run flutter_asset_manager:generate
+git clone https://github.com/androdevsatyam/flutter_asset_injector.git
+cd flutter_asset_injector/example
+dart run flutter_asset_injector:generate
 ```
 
 **Boom. Assets Loaded.** Open the `example/pubspec.yaml` and watch how flawlessly the assets were injected.
