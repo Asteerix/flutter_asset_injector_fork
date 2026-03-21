@@ -147,9 +147,4 @@ void generateAssets(List<String> args) {
   print(
     'Successfully updated pubspec.yaml with ${assetPaths.length} paths from "$folderName".',
   );
-  for (final path
-      in assetPaths.toList()
-        ..sort((a, b) => compareNatural(a.toLowerCase(), b.toLowerCase()))) {
-    // print(' - $path');
-  }
 }

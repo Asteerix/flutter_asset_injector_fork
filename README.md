@@ -55,7 +55,7 @@ dart run flutter_asset_manager:generate my_custom_folder
 Want to see it in action before adding it to your own project? We have a fully configured example project ready for you to playfully test on!
 
 ```bash
-git clone git clone https://github.com/androdevsatyam/flutter_asset_manager.git
+git clone https://github.com/androdevsatyam/flutter_asset_manager.git
 cd flutter_asset_manager/example
 dart run flutter_asset_manager:generate
 ```
