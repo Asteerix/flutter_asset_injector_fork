@@ -8,7 +8,7 @@ on:
 
 jobs:
   dart-package-test:
-    name: Dart Package Tests
+    name: Dart Package Test
     runs-on: ubuntu-latest
     
     defaults:
