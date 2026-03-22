@@ -10,10 +10,6 @@ jobs:
   dart-package-test:
     name: Dart Package Test
     runs-on: ubuntu-latest
-    
-    defaults:
-      run:
-        working-directory: .
 
     steps:
       - name: Checkout Repo
@@ -24,14 +20,17 @@ jobs:
         with:
           sdk: stable
 
+      - name: Prevent example from resolving Flutter dependencies
+        run: rm -rf example
+
       - name: Install Dependencies
         run: dart pub get
 
       - name: Analyze Code
-        run: dart analyze lib test
+        run: dart analyze
 
       - name: Run Tests
-        run: dart test test
+        run: dart test
 
   flutter-example-test:
     name: Flutter Example Checks
