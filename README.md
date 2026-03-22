@@ -1,13 +1,14 @@
 # 📁 flutter_asset_injector
 
 [![Pub Version](https://img.shields.io/pub/v/flutter_asset_injector?color=blue&logo=dart)](https://pub.dev/packages/flutter_asset_injector)
+![Popularity](https://img.shields.io/pub/popularity/flutter_asset_injector)
 [![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg)](https://opensource.org/licenses/MIT)
 
 > Say goodbye to manually typing `- assets/images/...` in your `pubspec.yaml`. Let a single command do it for you while keeping your file formatting intact!
 
 ---
 
-![Banner Placeholder](https://github.com/androdevsatyam/flutter_asset_injector/blob/main/assets/banner.png)
+![Banner Placeholder](https://raw.githubusercontent.com/androdevsatyam/flutter_asset_injector/main/assets/banner.png)
 
 ----
 ## 💡 The Motive
@@ -17,7 +18,7 @@ Just like how `flutter_native_splash` handles your splash screens, **`flutter_as
 
 ## 🎨 Demonstration
 
-![Demonstration GIF Placeholder](https://github.com/androdevsatyam/flutter_asset_injector/blob/main/assets/example.gif)
+![Demonstration GIF Placeholder](https://raw.githubusercontent.com/androdevsatyam/flutter_asset_injector/main/assets/example.gif)
 
 ---
 
@@ -72,7 +73,7 @@ Contributions are absolutely welcome! Feel free to open an issue or submit a PR 
 
 ## 👨‍💻 Author
 
-Built with ❤️ by **@androdevsatyam**
+Built with ❤️ by [**@androdevsatyam**](https://github.com/androdevsatyam)
 
 If this tool saved you time, consider ⭐ starring the repo.
 ___

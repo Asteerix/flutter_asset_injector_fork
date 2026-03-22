@@ -1,3 +1,10 @@
+/// A library to automatically scan and inject asset directories into `pubspec.yaml`.
+///
+/// This library provides the core logic to recursively scan an assets folder
+/// and safely add the discovered directories into the flutter assets section
+/// of the `pubspec.yaml` file.
+library;
+
 // ignore_for_file: avoid_print
 
 import 'dart:io';
@@ -5,6 +12,11 @@ import 'package:path/path.dart' as p;
 import 'package:yaml_edit/yaml_edit.dart';
 import 'package:collection/collection.dart';
 
+/// The main entry point to generate assets.
+///
+/// Scans the given folder (defaulting to `assets` if no [args] are provided),
+/// discovers all files efficiently, and updates the existing `pubspec.yaml`
+/// while maintaining original formatting.
 void generateAssets(List<String> args) {
   String folderName = 'assets';
   if (args.isNotEmpty) {
