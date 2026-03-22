@@ -7,8 +7,13 @@ on:
     branches: [main]
 
 jobs:
-  analyze_and_test:
+  dart-package-test:
+    name: Dart Package Tests
     runs-on: ubuntu-latest
+    
+    defaults:
+      run:
+        working-directory: .
 
     steps:
       - name: Checkout Repo
@@ -23,7 +28,26 @@ jobs:
         run: dart pub get
 
       - name: Analyze Code
-        run: dart analyze
+        run: dart analyze lib test
 
       - name: Run Tests
-        run: dart test
+        run: dart test test
+
+  flutter-example-test:
+    name: Flutter Example Checks
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set Up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: "stable"
+          flutter-version: "3.29.1"
+          cache: true
+
+      - name: Validate Example App
+        working-directory: example
+        run: |
+          flutter pub get
