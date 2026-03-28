@@ -1,3 +1,14 @@
+> **Fork Notice** — This is a maintained fork of [`flutter_asset_injector`](https://github.com/androdevsatyam/flutter_asset_injector) by [@androdevsatyam](https://github.com/androdevsatyam).
+>
+> **Why this fork exists:**
+> - The upstream package has not been updated to support the latest Dart/Flutter SDK versions
+> - This fork includes compatibility fixes and dependency updates to keep the tool working with current Flutter projects
+> - All credit for the original concept and implementation goes to the upstream author
+>
+> If the upstream package resumes active maintenance, this fork may be archived.
+
+---
+
 # 📁 flutter_asset_injector
 
 [![Pub Version](https://img.shields.io/pub/v/flutter_asset_injector?color=blue&logo=dart)](https://pub.dev/packages/flutter_asset_injector)
