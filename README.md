@@ -67,8 +67,8 @@ dart run flutter_asset_injector:generate my_custom_folder
 Want to see it in action before adding it to your own project? We have a fully configured example project ready for you to playfully test on!
 
 ```bash
-git clone https://github.com/androdevsatyam/flutter_asset_injector.git
-cd flutter_asset_injector/example
+git clone https://github.com/Asteerix/flutter_asset_injector_fork.git
+cd flutter_asset_injector_fork/example
 dart run flutter_asset_injector:generate
 ```
 
