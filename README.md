@@ -1,6 +1,7 @@
 > **Fork Notice** — This is a maintained fork of [`flutter_asset_injector`](https://github.com/androdevsatyam/flutter_asset_injector) by [@androdevsatyam](https://github.com/androdevsatyam).
 >
 > **Why this fork exists:**
+>
 > - The upstream package has not been updated to support the latest Dart/Flutter SDK versions
 > - This fork includes compatibility fixes and dependency updates to keep the tool working with current Flutter projects
 > - All credit for the original concept and implementation goes to the upstream author
@@ -21,9 +22,11 @@
 
 ![Banner Placeholder](https://raw.githubusercontent.com/androdevsatyam/flutter_asset_injector/main/assets/banner.png)
 
-----
+---
+
 ## 💡 The Motive
-In Flutter, defining assets in `pubspec.yaml` can get incredibly tedious when your project scales. Creating a new module feature often means making new asset directories like `assets/icons/home_feature/`, and forgetting to declare them in `pubspec.yaml` leads to frustrating "Asset not found" crashes during runtime. 
+
+In Flutter, defining assets in `pubspec.yaml` can get incredibly tedious when your project scales. Creating a new module feature often means making new asset directories like `assets/icons/home_feature/`, and forgetting to declare them in `pubspec.yaml` leads to frustrating "Asset not found" crashes during runtime.
 
 Just like how `flutter_native_splash` handles your splash screens, **`flutter_asset_injector`** provides a simple CLI tool that recursively scans your assets folder and accurately injects every necessary directory path right into your `pubspec.yaml`.
 
@@ -34,14 +37,16 @@ Just like how `flutter_native_splash` handles your splash screens, **`flutter_as
 ---
 
 ## ✨ Features
-* **Zero Config Required:** Plug and play. No bloated configuration models required.
-* **Recursive Auto-Discovery:** Scans through all nested directories and safely includes only folders that actually contain files.
-* **Natural Sorting:** Lists your paths in the exact same Natural Order that your IDE (VS Code / Android Studio) sorts your folder tree.
-* **Respects Your Styling:** Uses intelligent AST Yaml injection under the hood to ensure all your original `pubspec.yaml` **formatting, spacing, and comments remain untouched**.
+
+- **Zero Config Required:** Plug and play. No bloated configuration models required.
+- **Recursive Auto-Discovery:** Scans through all nested directories and safely includes only folders that actually contain files.
+- **Natural Sorting:** Lists your paths in the exact same Natural Order that your IDE (VS Code / Android Studio) sorts your folder tree.
+- **Respects Your Styling:** Uses intelligent AST Yaml injection under the hood to ensure all your original `pubspec.yaml` **formatting, spacing, and comments remain untouched**.
 
 ## 🚀 Quick Start
 
 ### 1. Add Dependency
+
 Add this to your package's `pubspec.yaml` (under `dev_dependencies`):
 
 ```yaml
@@ -50,12 +55,15 @@ dev_dependencies:
 ```
 
 ### 2. Run the Command
+
 Execute the following from your terminal:
+
 ```bash
 dart run flutter_asset_injector:generate
 ```
 
-*By default, the script looks for a root folder named `assets`. If you use different naming, just pass it as an argument:*
+_By default, the script looks for a root folder named `assets`. If you use different naming, just pass it as an argument:_
+
 ```bash
 dart run flutter_asset_injector:generate my_custom_folder
 ```
@@ -77,14 +85,15 @@ dart run flutter_asset_injector:generate
 ---
 
 ## 🤝 Contributing
+
 Contributions are absolutely welcome! Feel free to open an issue or submit a PR on GitHub.
 
 ---
-
 
 ## 👨‍💻 Author
 
 Built with ❤️ by [**@androdevsatyam**](https://github.com/androdevsatyam)
 
 If this tool saved you time, consider ⭐ starring the repo.
-___
+
+---

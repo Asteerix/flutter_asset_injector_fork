@@ -111,9 +111,8 @@ void generateAssets(List<String> args) {
   finalAssets.removeWhere((element) => element.startsWith(prefix));
 
   finalAssets.addAll(assetPaths);
-  finalAssets =
-      finalAssets.toSet().toList()
-        ..sort((a, b) => compareNatural(a.toLowerCase(), b.toLowerCase()));
+  finalAssets = finalAssets.toSet().toList()
+    ..sort((a, b) => compareNatural(a.toLowerCase(), b.toLowerCase()));
 
   // Fallback YamlEditor if the visual placeholder doesn't exist
   if (hasFlutterSection && !flutterIsNull) {
@@ -139,12 +138,17 @@ void generateAssets(List<String> args) {
     dummyEditor.update(['assets'], finalAssets);
     final formattedAssets = dummyEditor.toString().trim();
     // Indent it correctly for inside 'flutter:'
-    final indentedAssets =
-        formattedAssets.split('\n').map((line) => '  $line').join('\n');
+    final indentedAssets = formattedAssets
+        .split('\n')
+        .map((line) => '  $line')
+        .join('\n');
 
     // Make sure we didn't already have a valid assets block somewhere
     // otherwise we might duplicate it.
-    if (!RegExp(r'^[ \t]*assets:', multiLine: true).hasMatch(originalPubspecContent)) {
+    if (!RegExp(
+      r'^[ \t]*assets:',
+      multiLine: true,
+    ).hasMatch(originalPubspecContent)) {
       finalYamlString = originalPubspecContent.replaceFirst(
         placeholderRegex,
         '$indentedAssets\n',
